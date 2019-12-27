@@ -59,12 +59,11 @@ namespace MScan
             }
 
             Properties.Settings.Default.DefaultDPI = int.Parse(dpiCmbBox.SelectedItem.ToString());
-            
-            
-            
-            
-            
-            
+
+            Properties.Settings.Default.PreferNetwork = networkPrefChk.Checked;
+
+            Properties.Settings.Default.Save();
+
             Close();
         }
     }
