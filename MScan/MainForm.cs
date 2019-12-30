@@ -119,21 +119,27 @@ namespace MScan
 
             string SaveDirectory = Properties.Settings.Default.SaveDirectory;
 
-            if (File.Exists(Path.Combine(SaveDirectory, "Image.png")))
-            {
-                int i = 1;
+            //if (File.Exists(Path.Combine(SaveDirectory, "Image.png")))
+            //{
+            //    int i = 1;
+            //    while (File.Exists(Path.Combine(SaveDirectory, "Image (" + i + ").png")))
+            //    {
+            //        i++;
+            //    }
+            //    FileName = Path.Combine(SaveDirectory, "Image (" + i + ").png");
+            //}
+            //else
+            //{
+            //    FileName = Path.Combine(SaveDirectory, "Image.png");
+            //}
 
-                while (File.Exists(Path.Combine(SaveDirectory, "Image (" + i + ").png")))
-                {
-                    i++;
-                }
+            FileName = "Scan " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
 
-                FileName = Path.Combine(SaveDirectory, "Image (" + i + ").png");
-            }
-            else
-            {
-                FileName = Path.Combine(SaveDirectory, "Image.png");
-            }
+            FileName = FileName.Replace(".", "_");
+            FileName = FileName.Replace(":", "_");
+            FileName += ".png";
+
+            FileName = Path.Combine(SaveDirectory, FileName);
 
             return FileName;
         }
