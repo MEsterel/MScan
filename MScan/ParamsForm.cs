@@ -33,7 +33,7 @@ namespace MScan
 
             pathTxt.Text = Properties.Settings.Default.SaveDirectory;
 
-            dpiCmbBox.SelectedItem = Properties.Settings.Default.DefaultDPI.ToString();
+            dpiCmbBox.SelectedItem = Properties.Settings.Default.SelectedDPI.ToString();
 
             networkPrefChk.Checked = Properties.Settings.Default.PreferNetwork;
         }
@@ -58,13 +58,28 @@ namespace MScan
                 }
             }
 
-            Properties.Settings.Default.DefaultDPI = int.Parse(dpiCmbBox.SelectedItem.ToString());
+            Properties.Settings.Default.SelectedDPI = int.Parse(dpiCmbBox.SelectedItem.ToString());
 
             Properties.Settings.Default.PreferNetwork = networkPrefChk.Checked;
 
             Properties.Settings.Default.Save();
 
             Close();
+        }
+
+        private void normalBtn_Click(object sender, EventArgs e)
+        {
+            dpiCmbBox.SelectedItem = Properties.Settings.Default.normalDPI.ToString();
+        }
+
+        private void preciseBtn_Click(object sender, EventArgs e)
+        {
+            dpiCmbBox.SelectedItem = Properties.Settings.Default.preciseDPI.ToString();
+        }
+
+        private void mailBtn_Click(object sender, EventArgs e)
+        {
+            dpiCmbBox.SelectedItem = Properties.Settings.Default.mailDPI.ToString();
         }
     }
 }

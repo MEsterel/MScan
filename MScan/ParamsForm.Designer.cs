@@ -38,6 +38,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dpiCmbBox = new System.Windows.Forms.ComboBox();
             this.networkPrefChk = new System.Windows.Forms.CheckBox();
+            this.preciseBtn = new System.Windows.Forms.Button();
+            this.mailBtn = new System.Windows.Forms.Button();
+            this.normalBtn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +69,7 @@
             // okayBtn
             // 
             this.okayBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.okayBtn.Location = new System.Drawing.Point(362, 410);
+            this.okayBtn.Location = new System.Drawing.Point(371, 508);
             this.okayBtn.Name = "okayBtn";
             this.okayBtn.Size = new System.Drawing.Size(86, 29);
             this.okayBtn.TabIndex = 3;
@@ -78,7 +85,7 @@
             this.printersLstBox.ItemHeight = 17;
             this.printersLstBox.Location = new System.Drawing.Point(12, 64);
             this.printersLstBox.Name = "printersLstBox";
-            this.printersLstBox.Size = new System.Drawing.Size(436, 208);
+            this.printersLstBox.Size = new System.Drawing.Size(445, 208);
             this.printersLstBox.TabIndex = 4;
             // 
             // label3
@@ -96,7 +103,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pathTxt.Location = new System.Drawing.Point(12, 322);
             this.pathTxt.Name = "pathTxt";
-            this.pathTxt.Size = new System.Drawing.Size(436, 25);
+            this.pathTxt.Size = new System.Drawing.Size(445, 25);
             this.pathTxt.TabIndex = 6;
             // 
             // label4
@@ -104,26 +111,27 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 358);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 17);
+            this.label4.Size = new System.Drawing.Size(121, 17);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Qualité (nombre de DPI) :";
+            this.label4.Text = "Changer la qualité :";
             // 
             // dpiCmbBox
             // 
+            this.dpiCmbBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dpiCmbBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.dpiCmbBox.FormattingEnabled = true;
             this.dpiCmbBox.Items.AddRange(new object[] {
             "75",
             "100",
-            "150",
             "200",
             "300",
             "400",
             "600",
             "1200"});
-            this.dpiCmbBox.Location = new System.Drawing.Point(174, 355);
+            this.dpiCmbBox.Location = new System.Drawing.Point(139, 355);
             this.dpiCmbBox.Name = "dpiCmbBox";
-            this.dpiCmbBox.Size = new System.Drawing.Size(274, 25);
+            this.dpiCmbBox.Size = new System.Drawing.Size(318, 25);
             this.dpiCmbBox.TabIndex = 8;
             // 
             // networkPrefChk
@@ -136,12 +144,98 @@
             this.networkPrefChk.Text = "Privilégier les scanneurs réseau";
             this.networkPrefChk.UseVisualStyleBackColor = true;
             // 
+            // preciseBtn
+            // 
+            this.preciseBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.preciseBtn.Image = global::MScan.Properties.Resources.star32;
+            this.preciseBtn.Location = new System.Drawing.Point(156, 403);
+            this.preciseBtn.Name = "preciseBtn";
+            this.preciseBtn.Size = new System.Drawing.Size(82, 61);
+            this.preciseBtn.TabIndex = 10;
+            this.preciseBtn.Text = "Très précis";
+            this.preciseBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.preciseBtn.UseVisualStyleBackColor = true;
+            this.preciseBtn.Click += new System.EventHandler(this.preciseBtn_Click);
+            // 
+            // mailBtn
+            // 
+            this.mailBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mailBtn.Image = global::MScan.Properties.Resources.mail32;
+            this.mailBtn.Location = new System.Drawing.Point(375, 403);
+            this.mailBtn.Name = "mailBtn";
+            this.mailBtn.Size = new System.Drawing.Size(82, 61);
+            this.mailBtn.TabIndex = 12;
+            this.mailBtn.Text = "Mail";
+            this.mailBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mailBtn.UseVisualStyleBackColor = true;
+            this.mailBtn.Click += new System.EventHandler(this.mailBtn_Click);
+            // 
+            // normalBtn
+            // 
+            this.normalBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.normalBtn.Image = global::MScan.Properties.Resources.imageFile32;
+            this.normalBtn.Location = new System.Drawing.Point(271, 403);
+            this.normalBtn.Name = "normalBtn";
+            this.normalBtn.Size = new System.Drawing.Size(82, 61);
+            this.normalBtn.TabIndex = 11;
+            this.normalBtn.Text = "Normal";
+            this.normalBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.normalBtn.UseVisualStyleBackColor = true;
+            this.normalBtn.Click += new System.EventHandler(this.normalBtn_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(153, 383);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(288, 17);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Vous pouvez également choisir un pré-réglage :";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(375, 467);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 17);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "(fichier léger)";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(148, 467);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 17);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "(scan très long)";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(258, 467);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(106, 17);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "(photos, images)";
+            // 
             // ParamsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(460, 451);
+            this.ClientSize = new System.Drawing.Size(469, 549);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.preciseBtn);
+            this.Controls.Add(this.mailBtn);
+            this.Controls.Add(this.normalBtn);
             this.Controls.Add(this.networkPrefChk);
             this.Controls.Add(this.dpiCmbBox);
             this.Controls.Add(this.label4);
@@ -174,5 +268,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox dpiCmbBox;
         private System.Windows.Forms.CheckBox networkPrefChk;
+        private System.Windows.Forms.Button preciseBtn;
+        private System.Windows.Forms.Button mailBtn;
+        private System.Windows.Forms.Button normalBtn;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

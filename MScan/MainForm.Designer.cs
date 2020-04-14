@@ -33,10 +33,11 @@
             this.numerizeBtn = new System.Windows.Forms.Button();
             this.parametersBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pctBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.versionLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,15 +85,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Développé par Matthieu Badoy pour JMM (décembre 2019)";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MScan.Properties.Resources.iconfinder_icon_128_document_scan_314709__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 51);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // pctBox
             // 
             this.pctBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -106,12 +98,33 @@
             this.pctBox.TabIndex = 2;
             this.pctBox.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MScan.Properties.Resources.iconfinder_icon_128_document_scan_314709__2_;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 51);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // versionLbl
+            // 
+            this.versionLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.versionLbl.AutoSize = true;
+            this.versionLbl.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.versionLbl.Location = new System.Drawing.Point(572, 9);
+            this.versionLbl.Name = "versionLbl";
+            this.versionLbl.Size = new System.Drawing.Size(81, 13);
+            this.versionLbl.TabIndex = 10;
+            this.versionLbl.Text = "Version 0.0.0.0";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(665, 565);
+            this.Controls.Add(this.versionLbl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.parametersBtn);
             this.Controls.Add(this.numerizeBtn);
@@ -125,9 +138,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MScan";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pctBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,6 +154,7 @@
         private System.Windows.Forms.Button parametersBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label versionLbl;
     }
 }
 

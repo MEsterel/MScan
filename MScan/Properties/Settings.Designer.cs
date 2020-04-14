@@ -50,12 +50,12 @@ namespace MScan.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("200")]
-        public int DefaultDPI {
+        public int SelectedDPI {
             get {
-                return ((int)(this["DefaultDPI"]));
+                return ((int)(this["SelectedDPI"]));
             }
             set {
-                this["DefaultDPI"] = value;
+                this["SelectedDPI"] = value;
             }
         }
         
@@ -68,6 +68,42 @@ namespace MScan.Properties {
             }
             set {
                 this["PreferNetwork"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("600")]
+        public int preciseDPI {
+            get {
+                return ((int)(this["preciseDPI"]));
+            }
+            set {
+                this["preciseDPI"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        public int normalDPI {
+            get {
+                return ((int)(this["normalDPI"]));
+            }
+            set {
+                this["normalDPI"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int mailDPI {
+            get {
+                return ((int)(this["mailDPI"]));
+            }
+            set {
+                this["mailDPI"] = value;
             }
         }
     }

@@ -21,7 +21,7 @@ namespace MScan
         {
             InitializeComponent();
 
-            
+            versionLbl.Text = "Version " + Application.ProductVersion;
         }
 
         private void numerizeBtn_Click(object sender, EventArgs e)
@@ -39,9 +39,9 @@ namespace MScan
                 // Select the scanner
                 var scannerItem = device.Items[1];
 
-                int resolution = Properties.Settings.Default.DefaultDPI;
-                int width_pixel = 1250 * Properties.Settings.Default.DefaultDPI / 150;
-                int height_pixel = 1700 * Properties.Settings.Default.DefaultDPI / 150;
+                int resolution = Properties.Settings.Default.SelectedDPI;
+                int width_pixel = 1250 * Properties.Settings.Default.SelectedDPI / 150;
+                int height_pixel = 1700 * Properties.Settings.Default.SelectedDPI / 150;
                 int color_mode = 1;
                 AdjustScannerSettings(scannerItem, resolution, 0, 0, width_pixel, height_pixel, 0, 0, color_mode);
 
@@ -202,9 +202,10 @@ namespace MScan
             paramsForm.ShowDialog();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void MainForm_Shown(object sender, EventArgs e)
         {
-
+            BonjourForm bonjourForm = new BonjourForm();
+            bonjourForm.ShowDialog();
         }
     }
 }
