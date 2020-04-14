@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.preciseBtn = new System.Windows.Forms.Button();
             this.mailBtn = new System.Windows.Forms.Button();
             this.normalBtn = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,11 +53,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(141, 225);
+            this.label2.Location = new System.Drawing.Point(130, 225);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 17);
+            this.label2.Size = new System.Drawing.Size(128, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "(photos, images)";
+            this.label2.Text = "(photos, documents)";
             // 
             // label3
             // 
@@ -67,6 +67,34 @@
             this.label3.Size = new System.Drawing.Size(98, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "(scan très long)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(273, 225);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 17);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "(fichier léger)";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(148, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 47);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "MScan";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MScan.Properties.Resources.iconfinder_icon_128_document_scan_314709__2_;
+            this.pictureBox1.Location = new System.Drawing.Point(99, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 51);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // preciseBtn
             // 
@@ -103,34 +131,6 @@
             this.normalBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.normalBtn.UseVisualStyleBackColor = true;
             this.normalBtn.Click += new System.EventHandler(this.normalBtn_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(273, 225);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "(fichier léger)";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MScan.Properties.Resources.iconfinder_icon_128_document_scan_314709__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 51);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(148, 22);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 47);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "MScan";
             // 
             // BonjourForm
             // 
