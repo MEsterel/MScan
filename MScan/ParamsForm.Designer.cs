@@ -148,7 +148,7 @@
             // 
             this.preciseBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.preciseBtn.Image = global::MScan.Properties.Resources.star32;
-            this.preciseBtn.Location = new System.Drawing.Point(156, 411);
+            this.preciseBtn.Location = new System.Drawing.Point(147, 415);
             this.preciseBtn.Name = "preciseBtn";
             this.preciseBtn.Size = new System.Drawing.Size(82, 61);
             this.preciseBtn.TabIndex = 10;
@@ -161,7 +161,7 @@
             // 
             this.mailBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mailBtn.Image = global::MScan.Properties.Resources.mail32;
-            this.mailBtn.Location = new System.Drawing.Point(375, 411);
+            this.mailBtn.Location = new System.Drawing.Point(366, 415);
             this.mailBtn.Name = "mailBtn";
             this.mailBtn.Size = new System.Drawing.Size(82, 61);
             this.mailBtn.TabIndex = 12;
@@ -174,7 +174,7 @@
             // 
             this.normalBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.normalBtn.Image = global::MScan.Properties.Resources.imageFile32;
-            this.normalBtn.Location = new System.Drawing.Point(271, 411);
+            this.normalBtn.Location = new System.Drawing.Point(260, 415);
             this.normalBtn.Name = "normalBtn";
             this.normalBtn.Size = new System.Drawing.Size(82, 61);
             this.normalBtn.TabIndex = 11;
@@ -187,7 +187,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(153, 391);
+            this.label5.Location = new System.Drawing.Point(154, 391);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(288, 17);
             this.label5.TabIndex = 13;
@@ -197,7 +197,7 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(375, 475);
+            this.label6.Location = new System.Drawing.Point(366, 475);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 17);
             this.label6.TabIndex = 16;
@@ -207,7 +207,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(148, 475);
+            this.label7.Location = new System.Drawing.Point(139, 475);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 17);
             this.label7.TabIndex = 15;
@@ -217,7 +217,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(247, 475);
+            this.label8.Location = new System.Drawing.Point(237, 475);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 17);
             this.label8.TabIndex = 14;
