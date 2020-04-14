@@ -57,6 +57,11 @@ namespace MScan
                         File.Delete(path);
                     }
 
+                    if (!Directory.Exists(Path.GetDirectoryName(path)))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(path));
+                    }
+
                     imageFile.SaveFile(path);
 
                     using (FileStream fs = File.Open(path, FileMode.Open))
@@ -136,6 +141,7 @@ namespace MScan
             FileName = "Scan " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
 
             FileName = FileName.Replace(".", "_");
+            FileName = FileName.Replace("/", "_");
             FileName = FileName.Replace(":", "_");
             FileName += ".png";
 
